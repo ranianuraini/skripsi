@@ -9,6 +9,7 @@ from nltk.tokenize import word_tokenize
 # Download NLTK data if not already downloaded
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('wordnet')
 
 # Initialize stop words and lemmatizer
