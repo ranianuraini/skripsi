@@ -38,6 +38,8 @@ def preprocess_text(text):
 # Define Streamlit layout
 st.title("Aspect-Based Sentiment Analysis for Bromo Reviews")
 st.write("Enter your review to analyze sentiment for each aspect (attraction, amenity, accessibility, image, price, and human resource).")
+background-image: url/bromo.png
+background-size: cover;
 
 # Input for user text
 input_text = st.text_area("Enter review text:", "")
