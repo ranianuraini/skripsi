@@ -35,17 +35,6 @@ def preprocess_text(text):
     
     return ' '.join(lemmatized_tokens)
 
-st.markdown(
-    f"""
-    <style>
-    .stApp {{
-        background-image: url('bromo.png');
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-    }}
-    </style>
-    """, unsafe_allow_html=True)
 
 # Define Streamlit layout
 st.title("Aspect-Based Sentiment Analysis for Bromo Reviews")
