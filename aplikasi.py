@@ -40,6 +40,9 @@ def preprocess_text(text):
 st.title("Aspect-Based Sentiment Analysis for Bromo Reviews")
 st.write("Enter your review to analyze sentiment for each aspect (attraction, amenity, accessibility, image, price, and human resource).")
 
+# Input for user text
+input_text = st.text_area("Enter review text:", "")
+
 if st.button("Analyze"):
     # Only proceed if input_text is not empty
     if input_text.strip() != "":
