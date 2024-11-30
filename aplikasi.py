@@ -50,7 +50,7 @@ if st.button("Analyze"):
         processed_text = preprocess_text(input_text)
         
         # Load the TF-IDF vectorizer and transform the input text
-        tfidf_vectorizer = load('model_tfidf/tfidf-model.joblib')
+        tfidf_vectorizer = load('model-tfidf/tfidf-model.joblib')
         tfidf_features = tfidf_vectorizer.transform([processed_text]).toarray()
         
         # List of aspects and sentiment labels
@@ -60,11 +60,11 @@ if st.button("Analyze"):
         
         # Aspect-based sentiment prediction
         for aspek in list_aspek:
-            svm_model = load(f"model_tfidf/tfidf-svm-aspek-{aspek}.joblib")
+            svm_model = load(f"model-tfidf/tfidf-svm-aspek-{aspek}.joblib")
             pred = svm_model.predict(tfidf_features)
             
             if pred[0] == 1:
-                model_sentimen = load(f'model_tfidf/tfidf-svm-sentimen-{aspek}.joblib')
+                model_sentimen = load(f'model-tfidf/tfidf-svm-sentimen-{aspek}.joblib')
                 pred_sentimen = model_sentimen.predict(tfidf_features)
                 aspek_pred[aspek] = label_sentimen[pred_sentimen[0]]
         
