@@ -75,8 +75,8 @@ elif menu == "Data":
 
     try:
         # Ganti 'path_to_aspek_csv' dan 'path_to_sentimen_csv' dengan path file CSV Anda
-        aspek_data_path = 'dataset\data_aspek_labelled_new.csv'
-        sentimen_data_path = 'dataset\data_sentimen_labelled_new.csv'
+        aspek_data_path = 'dataset/data_aspek_labelled_new.csv'
+        sentimen_data_path = 'dataset/data_sentimen_labelled_new.csv'
 
         # Membaca data aspek dan sentimen
         aspek_df = pd.read_csv(aspek_data_path)
