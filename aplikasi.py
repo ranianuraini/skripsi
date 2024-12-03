@@ -335,7 +335,7 @@ elif menu == "Implementasi":
             tfidf_features = tfidf_vectorizer.transform([processed_text]).toarray()
             
             # List of aspects and sentiment labels
-            list_aspek = ['attraction', 'amenity', 'accessibility', 'image', 'price', 'human resource']
+            list_aspek = ['attraction', 'accessibility', 'image']
             aspek_pred = {}
             label_sentimen = {-1: 'Negatif', 1: 'Positif'}
             
