@@ -5,9 +5,9 @@ from joblib import load
 import re
 import nltk
 from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from nltk.tokenize import word_tokenize
-from nlp_id.lemmatizer import Lemmatizer
+
 
 # Download NLTK data if not already downloaded
 nltk.download('stopwords')
@@ -16,7 +16,8 @@ nltk.download('wordnet')
 
 # Initialize stop words and lemmatizer
 stop_words = set(stopwords.words('indonesian'))
-lemmatizer = WordNetLemmatizer()
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
 
 # Function to preprocess text
 def preprocess_text(text):
@@ -33,8 +34,7 @@ def preprocess_text(text):
     filtered_tokens = [word for word in tokens if word not in stop_words]
     
     # Lemmatization: Convert words to their base form
-    lemmatizer = Lemmatizer()
-    lemmatized_tokens = [lemmatizer.lemmatize(word) for word in filtered_tokens]
+    lemmatized_tokens = [stemmer.stem(word) for word in filtered_tokens]
     
     return ' '.join(lemmatized_tokens)
 
