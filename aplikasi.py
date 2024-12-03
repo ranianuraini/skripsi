@@ -160,7 +160,7 @@ elif menu == "Akurasi":
     st.title("Akurasi TF-IDF Pada Aspek")
     
     # Daftar aspek
-    list_aspek = ['attraction', 'amenity', 'accessibility', 'image', 'price', 'human resource']
+    list_aspek = ['attraction',  'accessibility', 'image']
 
     # Menampilkan tabel hasil evaluasi
     all_evaluations = []
@@ -196,7 +196,7 @@ elif menu == "Akurasi":
     st.title("Akurasi TF-IDF Pada Sentimen")
     
     # Daftar aspek
-    list_aspek = ['attraction', 'amenity', 'accessibility', 'image', 'price', 'human resource']
+    list_aspek = ['attraction', 'accessibility', 'image']
 
     # Menampilkan tabel hasil evaluasi
     all_evaluations = []
@@ -231,7 +231,7 @@ elif menu == "Akurasi":
     st.title("Akurasi WORD2VEC Pada Aspek")
     
     # Daftar aspek
-    list_aspek = ['attraction', 'amenity', 'accessibility', 'image', 'price', 'human resource']
+    list_aspek = ['attraction', 'accessibility', 'image']
 
     # Menampilkan tabel hasil evaluasi
     all_evaluations = []
@@ -266,7 +266,7 @@ elif menu == "Akurasi":
     st.title("Akurasi WORD2VEC Pada  Sentimen")
     
     # Daftar aspek
-    list_aspek = ['attraction', 'amenity', 'accessibility', 'image', 'price', 'human resource']
+    list_aspek = ['attraction', 'accessibility', 'image']
 
     # Menampilkan tabel hasil evaluasi
     all_evaluations = []
