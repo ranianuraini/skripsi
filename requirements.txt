@@ -5,4 +5,4 @@ scikit-learn==1.5.2
 numpy==1.26.4
 scipy==1.13.1
 pandas==2.2.3
-nlp-id==0.1.18.0
+Sastrawi==1.0.1
