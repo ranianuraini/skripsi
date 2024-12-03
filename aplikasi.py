@@ -7,6 +7,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
+from nlp_id.lemmatizer import Lemmatizer
 
 # Download NLTK data if not already downloaded
 nltk.download('stopwords')
@@ -32,6 +33,7 @@ def preprocess_text(text):
     filtered_tokens = [word for word in tokens if word not in stop_words]
     
     # Lemmatization: Convert words to their base form
+    lemmatizer = Lemmatizer()
     lemmatized_tokens = [lemmatizer.lemmatize(word) for word in filtered_tokens]
     
     return ' '.join(lemmatized_tokens)
