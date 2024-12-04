@@ -53,13 +53,11 @@ if menu == "Dashboard Utama":
     Ulasan tersebut dianalisis berdasarkan beberapa aspek utama, seperti:
     
     1. **Daya Tarik (Attraction)**: Mengukur seberapa menarik objek wisata Gunung Bromo bagi pengunjung.
-    2. **Fasilitas (Amenity)**: Menganalisis kualitas fasilitas yang tersedia di sekitar Gunung Bromo, seperti akomodasi, tempat makan, dan fasilitas lainnya.
-    3. **Aksesibilitas (Accessibility)**: Menilai sejauh mana akses ke Gunung Bromo mudah dijangkau oleh pengunjung.
-    4. **Gambar (Image)**: Menilai bagaimana citra Gunung Bromo di mata pengunjung berdasarkan foto atau gambaran visual yang diberikan dalam ulasan.
-    5. **Harga (Price)**: Mengukur apakah harga tiket masuk dan layanan di Gunung Bromo sesuai dengan harapan pengunjung.
-    6. **Sumber Daya Manusia (Human Resources)**: Menganalisis kualitas pelayanan dan interaksi dengan staf atau pemandu di sekitar Gunung Bromo.
+    2. **Aksesibilitas (Accessibility)**: Menilai sejauh mana akses ke Gunung Bromo mudah dijangkau oleh pengunjung.
+    3. **Citra (Image)**: Menilai bagaimana citra Gunung Bromo di mata pengunjung berdasarkan foto atau gambaran visual yang diberikan dalam ulasan.
 
-    Sistem ini bertujuan untuk memberikan gambaran yang lebih jelas tentang persepsi pengunjung terhadap berbagai aspek yang ada di Gunung Bromo. Sentimen yang dianalisis dikategorikan sebagai positif, negatif, atau netral, yang kemudian digunakan untuk memberikan wawasan yang lebih baik bagi pengelola objek wisata dalam meningkatkan pengalaman pengunjung.
+
+    Sistem ini bertujuan untuk memberikan gambaran yang lebih jelas tentang persepsi pengunjung terhadap berbagai aspek yang ada di Gunung Bromo. Sentimen yang dianalisis dikategorikan sebagai positif, atau negatif yang kemudian digunakan untuk memberikan wawasan yang lebih baik bagi pengelola objek wisata dalam meningkatkan pengalaman pengunjung.
 
     Dengan menggunakan machine learning dan pemrosesan bahasa alami (NLP), aplikasi ini secara otomatis mengkategorikan sentimen dari setiap ulasan yang diterima berdasarkan aspek-aspek tersebut.
     """)
