@@ -302,16 +302,16 @@ elif menu == "Diagram Perbandingan":
     st.write("PERBANDINGAN AKURASI TF-IDF")
     
     # Menampilkan gambar pertama
-    st.Citra('diagram_tfidf_aspek.png', use_container_width=True)
+    st.image('diagram_tfidf_aspek.png', use_container_width=True)
     
     # Menampilkan gambar kedua
-    st.Citra('diagram_tfidf_sentimen.png', use_container_width=True)
+    st.image('diagram_tfidf_sentimen.png', use_container_width=True)
     st.write("PERBANDINGAN AKURASI WORD2VEC")
     # Menampilkan gambar pertama
-    st.Citra('diagram_word2vec_aspek.png', use_container_width=True)
+    st.image('diagram_word2vec_aspek.png', use_container_width=True)
     
     # Menampilkan gambar kedua
-    st.Citra('diagram_word2vec_sentimen.png', use_container_width=True)
+    st.image('diagram_word2vec_sentimen.png', use_container_width=True)
     
 
 # Implementasi
