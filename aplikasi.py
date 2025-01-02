@@ -52,9 +52,9 @@ if menu == "Dashboard Utama":
     Aplikasi ini menggunakan teknik analisis sentimen untuk mengolah ulasan yang diberikan oleh pengunjung Gunung Bromo.
     Ulasan tersebut dianalisis berdasarkan beberapa aspek utama, seperti:
     
-    1. **Daya Tarik (Attraction)**: Mengukur seberapa menarik objek wisata Gunung Bromo bagi pengunjung.
-    2. **Aksesibilitas (Accessibility)**: Menilai sejauh mana akses ke Gunung Bromo mudah dijangkau oleh pengunjung.
-    3. **Citra (Image)**: Menilai bagaimana citra Gunung Bromo di mata pengunjung berdasarkan foto atau gambaran visual yang diberikan dalam ulasan.
+    1. **Daya Tarik (Daya Tarik)**: Mengukur seberapa menarik objek wisata Gunung Bromo bagi pengunjung.
+    2. **Aksesibilitas (Aksesibilitas)**: Menilai sejauh mana akses ke Gunung Bromo mudah dijangkau oleh pengunjung.
+    3. **Citra (Citra)**: Menilai bagaimana citra Gunung Bromo di mata pengunjung berdasarkan foto atau gambaran visual yang diberikan dalam ulasan.
 
 
     Sistem ini bertujuan untuk memberikan gambaran yang lebih jelas tentang persepsi pengunjung terhadap berbagai aspek yang ada di Gunung Bromo. Sentimen yang dianalisis dikategorikan sebagai positif, atau negatif yang kemudian digunakan untuk memberikan wawasan yang lebih baik bagi pengelola objek wisata dalam meningkatkan pengalaman pengunjung.
@@ -302,16 +302,16 @@ elif menu == "Diagram Perbandingan":
     st.write("PERBANDINGAN AKURASI TF-IDF")
     
     # Menampilkan gambar pertama
-    st.image('diagram_tfidf_aspek.png', use_container_width=True)
+    st.Citra('diagram_tfidf_aspek.png', use_container_width=True)
     
     # Menampilkan gambar kedua
-    st.image('diagram_tfidf_sentimen.png', use_container_width=True)
+    st.Citra('diagram_tfidf_sentimen.png', use_container_width=True)
     st.write("PERBANDINGAN AKURASI WORD2VEC")
     # Menampilkan gambar pertama
-    st.image('diagram_word2vec_aspek.png', use_container_width=True)
+    st.Citra('diagram_word2vec_aspek.png', use_container_width=True)
     
     # Menampilkan gambar kedua
-    st.image('diagram_word2vec_sentimen.png', use_container_width=True)
+    st.Citra('diagram_word2vec_sentimen.png', use_container_width=True)
     
 
 # Implementasi
@@ -333,7 +333,7 @@ elif menu == "Implementasi":
             tfidf_features = tfidf_vectorizer.transform([processed_text]).toarray()
             
             # List of aspects and sentiment labels
-            list_aspek = ['attraction', 'accessibility', 'image']
+            list_aspek = ['Daya Tarik', 'Aksesibilitas', 'Citra']
             aspek_pred = {}
             label_sentimen = {-1: 'Negatif', 1: 'Positif'}
             
